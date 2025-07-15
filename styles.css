@@ -52,7 +52,7 @@
     font-family: var(--font);
     display: flex;
     flex-direction: column;
-    
+
     padding: 15px;
     box-shadow: 7px 7px 1px var(--dark-grey);
 }
@@ -122,4 +122,6 @@ img{
      text-align: center;
      line-height: var(--author-height);
      margin-left: 10px;
+     font-size: 15px;
+     font-weight: 600;
 }

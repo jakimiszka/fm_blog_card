@@ -1,0 +1,121 @@
+@import url('https://fonts.google.com/specimen/Figtree?family=Outfit:wght@500..800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(0, 0%, 42%);
+  --dark-grey: hsl(0, 0%, 7%);
+  --author-height: 40px;
+  --radius: 15px;
+  --margin-top: 20px;
+  --fs-title: 22px;
+  --fs-reg: 15px;
+  --font-p: 16px;
+  --font-desc: 12px;
+  --font: 'Figtree', sans-serif;
+}
+
+ .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: var(--yellow);
+}
+
+.card{
+    width: 21.875rem; /* 350px */
+    height: 31.25rem; /* 500px */
+    margin: auto;
+    background-color: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--dark-grey);
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+    box-shadow: 7px 7px 1px var(--dark-grey);
+}
+
+img{
+    display: block;
+    border-radius: var(--radius)
+}
+
+.tag{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+
+    font-size: var(--fs-reg);
+    margin-top: var(--margin-top); 
+    background-color: var(--yellow);
+    color: var(--dark-grey);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date{
+    color: var(--dark-grey);
+    margin-top: var(--margin-top);
+    font-size: var(--font-desc);
+    font-weight: 550;
+}
+
+.title{
+    font-size: var(--fs-title);
+    color: var(--dark-grey);
+    margin-top: var(--margin-top);
+
+    font-weight: 800;
+}
+
+.description{
+    font-size: var(--font-p);
+    color: var(--light-grey);
+    margin-top: var(--margin-top); 
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.author{
+    display: block;
+    height: var(--author-height);
+    margin-top: var(--margin-top);
+}
+
+.author-icon{
+    width: var(--author-height);
+    border-radius: 50%;
+    background-color: var(--dark-grey);
+    display: block;
+    float: left;
+}
+
+.author-name{
+     display: block;
+     float: left;
+     text-align: center;
+     line-height: var(--author-height);
+     margin-left: 10px;
+}
